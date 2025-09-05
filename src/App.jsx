@@ -3,11 +3,17 @@ import './App.css'
 import HeaderMenu from './components/HeaderMenu/HeaderMenu'
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [activePage, setActivePage] = useState('Inicio')
 
   return (
     <>
-        <HeaderMenu></HeaderMenu>
+        <HeaderMenu
+          activePage={activePage}
+          setActivePage={setActivePage}
+        />
+        <main>
+            <h2>{activePage}</h2>
+        </main>
     </>
   )
 }
