@@ -1,15 +1,8 @@
 import './LinkMenu.css'
 
-const LinkMenu = ({ title, setActivePage, setActiveSubPage }) => {
+export const LinkMenu = ({ title, getActivePage }) => {
 
     return (
-        <button className='link__menu' 
-            onClick={() => {
-                setActivePage(title)
-                setActiveSubPage('')
-            }}>{ title }
-        </button>
+        <button className='link__menu' onClick={() => getActivePage(title)}>{ title }</button>
     )
 }
-
-export default LinkMenu;

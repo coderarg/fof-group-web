@@ -1,8 +1,8 @@
 import './HeaderMenu.css'
-import LinkMenu from '../LinkMenu/LinkMenu'
-import SubLinkMenu from '../SubLinkMenu/SubLinkMenu'
+import { NavMenu } from '../SubLinkMenu/NavMenu'
+import { LinkMenu } from '../LinkMenu/LinkMenu'
 
-const HeaderMenu = ({ menuItems, activePage, setActivePage, setActiveSubPage }) => {
+export const HeaderMenu = ({ menuItems, activePage, getActivePage, getActiveSubPage }) => {
 
     return(
         <header>
@@ -10,35 +10,17 @@ const HeaderMenu = ({ menuItems, activePage, setActivePage, setActiveSubPage }) 
                 <h1><span>FOF </span>GROUP</h1>
                 <p>TRANSPORTE | DISTRIBUCIÓN | FERRETERÍA</p>
             </div>
+
             <nav>
                 {
-                    Object.keys(menuItems).map((item, index) => (
-                        <LinkMenu 
-                            key={index}
-                            title = {item}
-                            setActivePage={setActivePage}
-                            setActiveSubPage={setActiveSubPage}
-                            onClick={() => {
-                                setActiveSubPage(menuItems[item][0])
-                            }}
-                        />
-                    ))
+                    Object.keys(menuItems).map((item) => {
+                        return(<LinkMenu key={item} getActivePage={getActivePage} title={item}></LinkMenu>)
+                    })
                 }
             </nav>
-            <nav>
-                {menuItems[activePage].map((subitem, index) => {
-                    return(
-                        <SubLinkMenu 
-                            key={index}
-                            subTitle={subitem}
-                            setActiveSubPage={setActiveSubPage}
-                        />
-                    )
-                })}
-            </nav>
+            {activePage !== "Inicio" && <NavMenu activePage={activePage} getActiveSubPage={getActiveSubPage} items={menuItems}></NavMenu>}
+            
 
         </header>
     ) 
 }
-
-export default HeaderMenu
