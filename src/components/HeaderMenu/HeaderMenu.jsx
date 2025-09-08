@@ -1,16 +1,8 @@
 import './HeaderMenu.css'
 import LinkMenu from '../LinkMenu/LinkMenu'
-import SubNav from '../SubNav/SubNav'
+import SubLinkMenu from '../SubLinkMenu/SubLinkMenu'
 
-import { useState } from 'react'
-
-const menuItems = {
-    "Nosotros" : [ 'Descripción', 'Organigrama', 'Misión - Visión - Valores'],
-    "Estilos": ['Estilo 1', 'Estilo 2', 'Estilo 3'],
-    "Situacional": ['Situación 1', 'Situación 2']
-}
-
-const HeaderMenu = ( {activePage, setActivePage} ) => {
+const HeaderMenu = ({ menuItems, activePage, setActivePage, setActiveSubPage }) => {
 
     return(
         <header>
@@ -18,15 +10,33 @@ const HeaderMenu = ( {activePage, setActivePage} ) => {
                 <h1><span>FOF </span>GROUP</h1>
                 <p>TRANSPORTE | DISTRIBUCIÓN | FERRETERÍA</p>
             </div>
-
             <nav>
-                <LinkMenu title="Inicio" setActiveMenu={() => setActivePage('Inicio')} />
-                <LinkMenu title="Nosotros" setActiveMenu={() => setActivePage('Nosotros')} />
-                <LinkMenu title="Estilos" setActiveMenu={() => setActivePage('Estilos')} />
-                <LinkMenu title="Situacional" setActiveMenu={() => setActivePage('Situacional')} />
+                {
+                    Object.keys(menuItems).map((item, index) => (
+                        <LinkMenu 
+                            key={index}
+                            title = {item}
+                            setActivePage={setActivePage}
+                            setActiveSubPage={setActiveSubPage}
+                            onClick={() => {
+                                setActiveSubPage(menuItems[item][0])
+                            }}
+                        />
+                    ))
+                }
+            </nav>
+            <nav>
+                {menuItems[activePage].map((subitem, index) => {
+                    return(
+                        <SubLinkMenu 
+                            key={index}
+                            subTitle={subitem}
+                            setActiveSubPage={setActiveSubPage}
+                        />
+                    )
+                })}
             </nav>
 
-            {/* <SubNav items={menuItems[activePage]} /> */}
         </header>
     ) 
 }
