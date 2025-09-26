@@ -1,40 +1,30 @@
-import './App.css'
 import { HeaderMenu } from './components/HeaderMenu/HeaderMenu'
+import { Routes, Route } from 'react-router-dom'
+import { Inicio } from './routes/Inicio'
+import { Organigrama } from './routes/Organigrama'
 import { useState } from 'react'
-
+import { AcercaDe } from './routes/AcercaDe'
 
 export const App = () => {
-    const menuItems = {
-        "Inicio": [''],
-        "Nosotros" : [ 'Descripción', 'Organigrama', 'Misión - Visión - Valores'],
-        "Estilos": ['Estilo 1', 'Estilo 2', 'Estilo 3'],
-        "Situacional": ['Situación 1', 'Situación 2']
-        }
 
-    const [activePage, setActivePage] = useState('Inicio')
+    const [activePage, setActivePage] = useState('inicio')
     const [activeSubPage, setActiveSubPage] = useState('')
 
-    const onGetAtivePage = (page) => {
-        setActivePage(page)
-        setActiveSubPage(menuItems[page][0])
-    }
-
-    const onGetAtiveSubPage = (subPage) => {
-        setActiveSubPage(subPage)
-    } 
-
     return (
-    <>
-        <HeaderMenu 
-            getActivePage={onGetAtivePage}
-            getActiveSubPage={onGetAtiveSubPage}
-            activePage={activePage}
-            menuItems={menuItems}
-        ></HeaderMenu>
-        <main>
-            <h1>{ activePage }</h1>
-            {activePage !== "Inicio" && <h2>{ activeSubPage }</h2>}
-        </main>
-    </>
+        <>
+            <HeaderMenu 
+                activePage={activePage} 
+                activeSubPage={activeSubPage}
+                setActivePage={setActivePage}
+                setActiveSubPage={setActiveSubPage}
+            ></HeaderMenu>
+            <main>
+                <Routes>
+                    <Route path='fof-group-web/' element={<Inicio></Inicio>}></Route>
+                    <Route path='fof-group-web/acerca de' element={<AcercaDe></AcercaDe>}></Route>
+                    <Route path='fof-group-web/organigrama' element={<Organigrama></Organigrama>}></Route>
+                </Routes>
+            </main>
+        </>
     )
 }

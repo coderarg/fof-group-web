@@ -1,8 +1,8 @@
 import './LinkMenu.css'
 
-export const LinkMenu = ({ title, getActivePage }) => {
+export const LinkMenu = ({ title, setActivePage }) => {
 
     return (
-        <button className='link__menu' onClick={() => getActivePage(title)}>{ title }</button>
+        <a className='link__menu' href={`/fof-group-web/${title}`} onClick={() => setActivePage(title)} >{ title }</a>
     )
 }
