@@ -11,7 +11,7 @@ export const AcercaDe = () => {
             clientes soluciones confiables y de calidad.</p>
             <p>Nuestra dedicación ha sido avalada por la confianza de grandes empresas como Toyota, YPF, Techint, La Anónima, Criba, Esuco, Metrocon, Overcon,Tosud, Pecom, Decon, lasa, Kracilec y muchas otras que han elegido nuestros servicios.</p>
             <p>En nuestro camino de crecimiento, hemos desarrollado un centro de distribución de gran envergadura en la ciudad de Mercedes, Bs. As. Este logro, fruto del esfuerzo conjunto de todo nuestro equipo, nos permite brindar un servicio más eficiente y alcanzar nuevos horizontes.</p>
-            <p>Hoy, somos la ferretería y centro de distribución más destacado de la región, con un alcance que abarca toda la provincia y el país, gracias a nuestros canales de venta online y nuestra propia flota de transporte.</p>
+            <p>Somos la ferretería y centro de distribución más destacado de la región, con un alcance que abarca toda la provincia y el país, gracias a nuestros canales de venta online y nuestra propia flota de transporte.</p>
         </div>
     )
 }

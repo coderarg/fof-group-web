@@ -26,10 +26,11 @@ header {
         font-size: 3rem;
         letter-spacing: -4px;
         margin: 0;
+        color: var(--eerie-black);
         
         span {
             font-weight: 700;
-            color: gray;
+            color: var(--gray);
         }
     }
 

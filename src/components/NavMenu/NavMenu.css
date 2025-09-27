@@ -1,6 +1,6 @@
 .link__menu {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: var(--white);
+    color: var(--eerie-black);
     margin: 5px 20px;
     padding: 0.6em 1.2em;
     font-weight: 600;
@@ -12,4 +12,9 @@
     transition: border-color 0.25s;
     cursor: pointer;
 
+}
+
+.link__menu:hover {
+    background-color: var(--teal);
+    color: var(--white);
 }

@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { Inicio } from './routes/Inicio'
 import { AcercaDe } from './routes/AcercaDe'
 import { Organigrama } from './routes/Organigrama'
+import { Explicacion } from './routes/Explicacion'
 import { NotFound } from './routes/404NotFound'
 
 export const App = () => {
@@ -13,17 +14,18 @@ export const App = () => {
 
     return (
         <>
-            <HeaderMenu 
-                activePage={activePage} 
+            <HeaderMenu
+                activePage={activePage}
                 activeSubPage={activeSubPage}
                 setActivePage={setActivePage}
                 setActiveSubPage={setActiveSubPage}
-                ></HeaderMenu>
+            ></HeaderMenu>
             <main>
                 <Routes>
                     <Route path='/' element={<Inicio />}></Route>
                     <Route path='/acerca de' element={<AcercaDe />}></Route>
                     <Route path='/organigrama' element={<Organigrama />}></Route>
+                    <Route path='/explicación' element={<Explicacion />}></Route>
                     <Route path='/cohercitivo' element={<NotFound />}></Route>
                     <Route path='/afiliativo' element={<NotFound />}></Route>
                     <Route path='/participativo' element={<NotFound />}></Route>

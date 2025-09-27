@@ -1,6 +1,14 @@
 :root {
     font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+    /* CSS HEX */
+    --eerie-black: #202020ff;
+    --gray: #808080ff;
+    --white: #ffffffff;
+    --teal: #137e7fff;
+    --pumpkin: #FF8438;
+    
 }
+
 
 * {
     margin: 0;
