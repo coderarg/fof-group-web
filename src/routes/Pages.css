@@ -2,12 +2,24 @@
     color: white;
 }
 
-
-.organigrama__container{
+.organigrama__container {
     color: white;
 }
 
+.organigrama__img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .organigrama__img {
     margin: auto;
 }
 
+h1 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+h2, h3 {
+    margin: 20px auto;
+}

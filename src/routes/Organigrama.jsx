@@ -4,7 +4,9 @@ export const Organigrama = () => {
     return (
         <div className="organigrama__container">
             <h1>Organigrama</h1>
-            <img className='organigrama__img' src="organigrama.png" alt="organigrama-fof-group"/>
+            <div className='organigrama__img-container'>
+                <img className='organigrama__img' src="organigrama.png" alt="organigrama-fof-group"/>
+            </div>
 
             <h2>Explicación de las tareas por persona</h2>
             <h3>Dirección y Coordinación</h3>

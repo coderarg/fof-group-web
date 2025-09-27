@@ -22,12 +22,15 @@ export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
             </div>
 
             <nav className='subnav'>    
-                {
-                    Object.keys(menuItems).map((item) => {
-                        return <a className='link__menu' 
-                        onClick={() => setActivePage(item)}>{item}</a>
-                    })
-                }
+                {Object.keys(menuItems).map((item) => (
+                    <a
+                        className='link__menu' 
+                        key={item}
+                        onClick={() => setActivePage(item)}
+                    >
+                        {item.toUpperCase()}
+                    </a>
+                ))}
             </nav>
             { activePage !== 'inicio' &&
                 <NavMenu 
