@@ -2,7 +2,7 @@ import './Pages.css'
 
 export const Explicacion = () => {
     return (
-        <div className="organigrama__container">
+        <div className="page__container">
             <h1>Explicación de las tareas por persona</h1>
             <h3>Dirección y Coordinación</h3>
             <p>Flores Federico desempeña un rol integral y transversal dentro de la organización. Sus responsabilidades abarcan la dirección general, la logística, la gerencia, la coordinación general y el área de ventas. En dirección general, establece los objetivos estratégicos y define la visión global de la empresa. En logística, asegura la eficiencia en la distribución y el transporte, optimizando recursos y tiempos. Desde la gerencia, toma decisiones relevantes en materia financiera, operativa y comercial. En ventas y coordinación, lidera la estrategia comercial y actúa como nexo entre las diferentes áreas, garantizando el flujo de información y la alineación de los equipos.</p>

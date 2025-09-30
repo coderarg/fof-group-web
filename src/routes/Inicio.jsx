@@ -2,7 +2,7 @@ import './Pages.css'
 
 export const Inicio = () => {
     return (
-        <div className="inicio__container">
+        <div className="page__container">
             <h1 className='titulo1'>Liderazgo y Negociación</h1>
             <div className='inicio__profesor'>
                 <h2 className='titulo2'>Profesor</h2>

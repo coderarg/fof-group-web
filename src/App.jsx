@@ -5,6 +5,8 @@ import { Inicio } from './routes/Inicio'
 import { AcercaDe } from './routes/AcercaDe'
 import { Organigrama } from './routes/Organigrama'
 import { Explicacion } from './routes/Explicacion'
+import { Cohercitivo } from './routes/Cohercitivo'
+import { Afiliativo } from './routes/Afiliativo'
 import { NotFound } from './routes/404NotFound'
 
 export const App = () => {
@@ -26,8 +28,8 @@ export const App = () => {
                     <Route path='/acerca de' element={<AcercaDe />}></Route>
                     <Route path='/organigrama' element={<Organigrama />}></Route>
                     <Route path='/explicación' element={<Explicacion />}></Route>
-                    <Route path='/cohercitivo' element={<NotFound />}></Route>
-                    <Route path='/afiliativo' element={<NotFound />}></Route>
+                    <Route path='/cohercitivo' element={<Cohercitivo />}></Route>
+                    <Route path='/afiliativo' element={<Afiliativo />}></Route>
                     <Route path='/participativo' element={<NotFound />}></Route>
                     <Route path='/delegativo' element={<NotFound />}></Route>
                     <Route path='/liderazgo conciente' element={<NotFound />}></Route>
