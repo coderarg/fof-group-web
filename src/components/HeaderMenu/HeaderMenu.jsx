@@ -1,19 +1,36 @@
 import './HeaderMenu.css'
 import { NavMenu } from '../NavMenu/NavMenu'
-
-const menuItems = {
-    'nosotros': ['acerca de', 'organigrama', 'explicación'],
-    'estilos': ['cohercitivo', 'afiliativo'],
-    'situacional': ['participativo', 'delegativo'],
-    'liderazgo': ['liderazgo conciente', 'liderazgo transformacional'],
-    'liderazgo efectivo': ['7 habitos', 'circulo dorado']
-}
-
+import { ToggleMenu } from '../ToogleMenu/ToggleMenu'
+import { useState } from 'react'
 
 export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
 
+    const menuItems = {
+        'nosotros': ['acerca de', 'organigrama', 'explicación'],
+        'estilos': ['cohercitivo', 'afiliativo'],
+        'situacional': ['participativo', 'delegativo'],
+        'liderazgo': ['liderazgo conciente', 'liderazgo transformacional'],
+        'liderazgo efectivo': ['7 habitos', 'circulo dorado'],
+        'liderazgo en equipo': ['test de personalidad'],
+        'coaching': ['¿que hacemos con federico?', 'preguntas'],
+        'inteligencia emocional': ['test de inteligencia emocional']
+    }
+
+
+    const [isMenuActive, setIsMenuActive] = useState(false)
+
+    function handleToggleMenu(isOpen) {
+        setIsMenuActive(isOpen)
+    }
+
     return (
         <header>
+            <div className="header__toogle-icon-container">
+                <ToggleMenu menuItems={menuItems}
+                    handleToggleMenu={handleToggleMenu}
+                    isMenuActive={isMenuActive}
+                    setActivePage={setActivePage} />
+            </div>
             <div className="logo__container">
                 <a href="/fof-group-web/">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" viewBox="0 0 16 16">
@@ -23,23 +40,12 @@ export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
                 </a>
                 <p>TRANSPORTE  |  DISTRIBUCIÓN  |  FERRETERÍA</p>
             </div>
-
-            <nav className='subnav'>
-                {Object.keys(menuItems).map((item) => (
-                    <a
-                        className='link__menu'
-                        key={item}
-                        onClick={() => setActivePage(item)}
-                    >
-                        {item.toUpperCase()}
-                    </a>
-                ))}
-            </nav>
             {activePage !== 'inicio' &&
                 <NavMenu
                     items={menuItems}
                     activePage={activePage}
                     setActivePage={setActiveSubPage}
+                    handleToggleMenu={handleToggleMenu}
                 ></NavMenu>
             }
 

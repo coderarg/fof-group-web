@@ -45,12 +45,3 @@ header {
 
 }
 
-.subnav {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    list-style: none;
-    padding: 10px 20px;
-    margin: 0px 20px;
-}
-
