@@ -9,10 +9,11 @@ export const NavMenu = ({ items, activePage, setActivePage, handleToggleMenu }) 
                 items[activePage].map((subitem) => {
                     return (
                         <Link className='link__menu'
-                            title={subitem}
-                            setActivePage={setActivePage}
                             to={`/${subitem.toLowerCase()}`}
-                            onClick={() => handleToggleMenu(false)}>
+                            onClick={() => {
+                                setActivePage(subitem)
+                                handleToggleMenu(false)
+                            }}>
                             {subitem.toUpperCase()
                             }</Link>
                     )

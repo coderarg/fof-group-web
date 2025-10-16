@@ -6,6 +6,7 @@ import { useState } from 'react'
 export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
 
     const menuItems = {
+        'inicio': [''],
         'nosotros': ['acerca de', 'organigrama', 'explicación'],
         'estilos': ['cohercitivo', 'afiliativo'],
         'situacional': ['participativo', 'delegativo'],
@@ -29,7 +30,8 @@ export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
                 <ToggleMenu menuItems={menuItems}
                     handleToggleMenu={handleToggleMenu}
                     isMenuActive={isMenuActive}
-                    setActivePage={setActivePage} />
+                    setActivePage={setActivePage}
+                    setActiveSubPage={setActiveSubPage} />
             </div>
             <div className="logo__container">
                 <a href="/fof-group-web/">
