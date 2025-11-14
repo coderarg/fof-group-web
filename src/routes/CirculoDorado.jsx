@@ -16,6 +16,7 @@ export const CirculoDorado = () => {
                     Qué: Distribución de productos de forma eficiente, segura y competitiva en el mercado nacional.
                 </li>
             </ul>
+            <img className='circulo_dorado_img' src="./circulo-dorado-img.png" alt="circulo dorado" />
             <h2>Ejemplo explicado:</h2>
             <p>Cuando un cliente recibe sus pedidos en tiempo y forma, no solo se está cumpliendo con el 'qué' (entrega), sino que también se refleja el 'cómo' (procesos eficientes) y se refuerza el 'por qué' (compromiso con la confianza y la satisfacción del cliente).</p>
         </div>
