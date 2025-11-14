@@ -7,7 +7,7 @@
 }
 
 .togglemenu__close-icon {
-    margin: 30px;
+    margin: 30px 30px 10px 30px;
     display: block;
     top: 0;
     left: 0;
@@ -23,6 +23,7 @@
     left: -30%;
     transition: all 0.5s;
     z-index: 10;
+    overflow-y: scroll;
 
 }
 
@@ -42,7 +43,7 @@
     background-color: var(--white);
     color: var(--eerie-black);
     margin: 5px 20px;
-    padding: 0.6em 1.2em;
+    padding: 0.4em 1.2em;
     font-weight: 600;
     font-size: 1em;
     text-decoration: none;
