@@ -27,19 +27,39 @@
     padding: 20px;
     border-radius: 15px;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
     h1 {
         text-align: center;
         margin: 30px auto;
         text-transform: uppercase;
     }
 
+    h1,
     h2,
     h3 {
-        margin: 20px auto;
+        margin: 20px 10px;
     }
 
+    h1,
+    h2,
+    h3,
+    h4,
+    ul,
+    li,
     p {
-        margin: 20px 10px;
+        width: 80%;
+        text-align: start;
+    }
+
+    td {
+        border: 1px solid black;
+        gap: 10px;
+        margin: 0px;
+        padding: 5px;
     }
 
 }

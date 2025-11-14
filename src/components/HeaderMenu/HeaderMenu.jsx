@@ -12,9 +12,10 @@ export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
         'situacional': ['situacional', 'participativo', 'delegativo'],
         'liderazgo': ['liderazgo', 'liderazgo conciente', 'liderazgo transformacional'],
         'liderazgo efectivo': ['liderazgo efectivo', '7 habitos', 'circulo dorado'],
-        'liderazgo en equipo': ['liderazgo en equipo', 'test de personalidad'],
-        'coaching': ['coaching', '¿qué hacemos con federico?', 'preguntas'],
+        'liderazgo de equipo': ['liderazgo de equipo', 'test de personalidad', 'plan de acción'],
+        'coaching': ['coaching', 'test escucha activa', 'preguntas'],
         'inteligencia emocional': ['inteligencia emocional', 'test de inteligencia emocional'],
+        'teoría del conflicto': ['teoría del conflicto'],
         'negociación': ['negociación', 'planificar una negociación', 'historia de la naranja', 'caso de humedales de berazategui'],
         'creatividad': ['creatividad', 'creatividad']
     }

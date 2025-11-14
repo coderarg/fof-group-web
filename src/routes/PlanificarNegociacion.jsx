@@ -1,6 +1,7 @@
+import './Pages.css'
 export const PlanificarNegociacion = () => {
     return (
-        <div>
+        <div className="page__container">
             <h1>Caso: Negociación entre María y Tamara</h1>
             <ol>
                 <li>
