@@ -1,10 +1,17 @@
+.navmenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+
 .link__menu {
     background-color: var(--white);
     color: var(--eerie-black);
     margin: 5px 20px;
-    padding: 0.6em 1.2em;
-    font-weight: 600;
-    font-size: 1em;
+    padding: 0.2em 0.6em;
+    font-weight: 500;
+    font-size: 0.8em;
     text-decoration: none;
 
     border: 3px solid transparent;

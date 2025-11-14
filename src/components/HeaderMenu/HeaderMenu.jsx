@@ -7,14 +7,16 @@ export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
 
     const menuItems = {
         'inicio': [''],
-        'nosotros': ['acerca de', 'organigrama', 'explicación'],
-        'estilos': ['cohercitivo', 'afiliativo'],
-        'situacional': ['participativo', 'delegativo'],
-        'liderazgo': ['liderazgo conciente', 'liderazgo transformacional'],
-        'liderazgo efectivo': ['7 habitos', 'circulo dorado'],
-        'liderazgo en equipo': ['test de personalidad'],
-        'coaching': ['¿que hacemos con federico?', 'preguntas'],
-        'inteligencia emocional': ['test de inteligencia emocional']
+        'nosotros': ['nosotros', 'acerca de', 'organigrama', 'explicación'],
+        'estilos': ['estilos', 'coercitivo', 'afiliativo'],
+        'situacional': ['situacional', 'participativo', 'delegativo'],
+        'liderazgo': ['liderazgo', 'liderazgo conciente', 'liderazgo transformacional'],
+        'liderazgo efectivo': ['liderazgo efectivo', '7 habitos', 'circulo dorado'],
+        'liderazgo en equipo': ['liderazgo en equipo', 'test de personalidad'],
+        'coaching': ['coaching', '¿qué hacemos con federico?', 'preguntas'],
+        'inteligencia emocional': ['inteligencia emocional', 'test de inteligencia emocional'],
+        'negociación': ['negociación', 'planificar una negociación', 'historia de la naranja', 'caso de humedales de berazategui'],
+        'creatividad': ['creatividad', 'creatividad']
     }
 
 

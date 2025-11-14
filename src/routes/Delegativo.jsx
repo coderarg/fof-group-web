@@ -1,3 +1,5 @@
+import './Pages.css'
+
 export const Delegativo = () => {
     return (
         <div className="page__container">

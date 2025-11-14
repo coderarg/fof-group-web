@@ -1,8 +1,8 @@
 .tooglemenu__open-icon {
-    position: absolute;
-    top: 5%;
-    left: 2%;
-    margin: 0;
+    margin: 30px;
+    display: block;
+    top: 0;
+    left: 0;
     height: 50px;
 }
 
@@ -58,4 +58,3 @@
     background-color: var(--teal);
     color: var(--white);
 }
-

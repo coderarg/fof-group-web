@@ -6,26 +6,33 @@
     --white: #ffffffff;
     --teal: #137e7fff;
     --pumpkin: #FF8438;
-    
 }
-
 
 * {
     margin: 0;
     padding: 0;
 }
 
+#root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
 body {
     width: 100%;
     min-height: 100vh;
+    background-color: #137e7f;
 }
 
 main {
-    margin: auto;
     background-color: #137e7f;
-    color: white;
-    min-height: 80vh;
-    padding: 10px 50px 10px 50px;
+    width: 100%;
+    min-height: 100%;
+    padding-top: 100px;
 }
 
 a {

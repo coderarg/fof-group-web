@@ -1,8 +1,8 @@
 import './Pages.css'
-export const Cohercitivo = () => {
+export const Coercitivo = () => {
     return (
         <div className="page__container">
-            <h1>Estilo Cohercitivo</h1>
+            <h1>Estilo Coercitivo</h1>
             <p>
                 En el equipo de trabajo, uno de los empleados es familiar directo del dueño de la empresa. Este empleado aprovecha de su relación, mostrando desinterés, realizando mal sus tareas o directamente incumpliendo con sus responsabilidades. Esta conducta genera desmotivación en el resto del equipo y afecta la productividad general.
             </p>
