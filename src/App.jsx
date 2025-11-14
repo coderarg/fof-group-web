@@ -10,6 +10,8 @@ import { LiderazgoEfectivo } from './routes/diapositivas/LiderazgoEfectivo'
 import { LiderazgoEquipo } from './routes/diapositivas/LiderazgoEquipo'
 import { Coaching } from './routes/diapositivas/Coaching'
 import { TeoriaConflicto } from './routes/diapositivas/TeoriaConflicto'
+import { Negociacion } from './routes/diapositivas/Negociacion'
+import { ProgramacionNeurolenguistica } from './routes/diapositivas/ProgramacionNeurolenguistica'
 
 {/* Importar Páginas Internas*/ }
 import { Inicio } from './routes/Inicio'
@@ -26,7 +28,7 @@ import { TestPersonalidad } from './routes/TestPersonalidad'
 import { PlanDeAccion } from './routes/PlanDeAccion'
 import { TestEscuchaActiva } from './routes/TestEscuchaActiva'
 import { Preguntas } from './routes/Preguntas'
-import { PlanificarNegociacion } from './routes/PlanificarNegociacion'
+import { MariayTamara } from './routes/MariayTamara'
 
 import { NotFound } from './routes/404NotFound'
 import { LiderazgoConciente } from './routes/LiderazgoConciente'
@@ -80,9 +82,11 @@ export const App = () => {
                     <Route path='/test de inteligencia emocional' element={<NotFound />}></Route>
                     {/*Unidad 7: Teoría del Conflicto*/}
                     <Route path='/teoría del conflicto' element={<TeoriaConflicto />}></Route>
-                    <Route path='/planificar una negociación' element={<PlanificarNegociacion />}></Route>
-                    {/*Unidad 8: Análisis de Caso de Negociación*/}
+                    {/*Unidad 8: Negociación entre María y Tamara*/}
+                    <Route path='/negociación' element={<Negociacion />}></Route>
+                    <Route path='/maria y tamara' element={<MariayTamara />}></Route>
                     {/*Unidad 9: Programación Neurolenguística*/}
+                    <Route path='/programación neurolengüística' element={<ProgramacionNeurolenguistica />}></Route>
                     {/*Unidad 10: Creatividad y Generación de opciones*/}
                     <Route path='/creatividad' element={<NotFound />}></Route>
                 </Routes>

@@ -1,5 +1,5 @@
 import './Pages.css'
-export const PlanificarNegociacion = () => {
+export const MariayTamara = () => {
     return (
         <div className="page__container">
             <h1>Caso: Negociación entre María y Tamara</h1>
