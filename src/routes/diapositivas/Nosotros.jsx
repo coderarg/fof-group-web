@@ -5,10 +5,10 @@ export const Nosotros = () => {
     return (
         <>
             <div className='slide__container'>
-                <h2>Nosotros</h2>
+                <img className='slide__img' src="./nosotros.png" alt="" />
             </div>
             <div className='slide__container'>
-                <h2>Nosotros</h2>
+                <img className='slide__img' src="./nosotros-organigrama.png" alt="" />
             </div>
 
         </>

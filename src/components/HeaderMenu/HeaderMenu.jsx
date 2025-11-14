@@ -13,11 +13,11 @@ export const HeaderMenu = ({ activePage, setActivePage, setActiveSubPage }) => {
         'liderazgo': ['liderazgo', 'liderazgo conciente', 'liderazgo transformacional'],
         'liderazgo efectivo': ['liderazgo efectivo', '7 habitos', 'circulo dorado'],
         'liderazgo de equipo': ['liderazgo de equipo', 'test de personalidad', 'plan de acción'],
-        'coaching': ['coaching', 'test escucha activa', 'preguntas', 'test de inteligencia emocional'],
-        'teoría del conflicto': ['teoría del conflicto', 'el rumor que divide', 'resolucion de conflictos'],
-        'negociación': ['negociación', 'maria y tamara', 'historia de la naranja', 'caso de humedales de berazategui'],
+        'coaching': ['coaching', 'test escucha activa', 'preguntas'],
+        'teoría del conflicto': ['teoría del conflicto', 'el rumor que divide', 'resolución de conflictos'],
+        'negociación': ['negociación', 'maria y tamara', 'historia de la naranja', 'humedales de berazategui'],
         'programación neurolengüística': ['programación neurolengüística', 'maría y tamara'],
-        'creatividad': ['creatividad', 'storytelling']
+        'creatividad': ['creatividad']
     }
 
 

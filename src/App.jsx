@@ -12,6 +12,7 @@ import { Coaching } from './routes/diapositivas/Coaching'
 import { TeoriaConflicto } from './routes/diapositivas/TeoriaConflicto'
 import { Negociacion } from './routes/diapositivas/Negociacion'
 import { ProgramacionNeurolenguistica } from './routes/diapositivas/ProgramacionNeurolenguistica'
+import { Creatividad } from './routes/diapositivas/Creatividad'
 
 {/* Importar Páginas Internas*/ }
 import { Inicio } from './routes/Inicio'
@@ -22,17 +23,20 @@ import { Coercitivo } from './routes/Coercitivo'
 import { Afiliativo } from './routes/Afiliativo'
 import { Participativo } from './routes/Participativo'
 import { Delegativo } from './routes/Delegativo'
+import { LiderazgoConciente } from './routes/LiderazgoConciente'
+import { LiderazgoTransformacional } from './routes/LiderazgoTransformacional'
 import { Habitos } from './routes/Habitos'
 import { CirculoDorado } from './routes/CirculoDorado'
 import { TestPersonalidad } from './routes/TestPersonalidad'
 import { PlanDeAccion } from './routes/PlanDeAccion'
 import { TestEscuchaActiva } from './routes/TestEscuchaActiva'
 import { Preguntas } from './routes/Preguntas'
+import { RumorDivide } from './routes/RumorDivide'
+import { ResolucionConflictos } from './routes/ResolucionConflictos'
 import { MariayTamara } from './routes/MariayTamara'
+import { HistoriaNaranja } from './routes/HistoriaNaranja'
+import { HumedalesBerazategui } from './routes/HumedalesBerazategui'
 
-import { NotFound } from './routes/404NotFound'
-import { LiderazgoConciente } from './routes/LiderazgoConciente'
-import { LiderazgoTransformacional } from './routes/LiderazgoTransformacional'
 
 export const App = () => {
 
@@ -60,7 +64,7 @@ export const App = () => {
                     <Route path='/coercitivo' element={<Coercitivo />}></Route>
                     <Route path='/afiliativo' element={<Afiliativo />}></Route>
                     {/*Unidad 2: Liderazgo Situacional*/}
-                    <Route path='/situacional' element={<Situacional />}></Route>
+                    <Route path='/situacional' element={<Estilos />}></Route>
                     <Route path='/participativo' element={<Participativo />}></Route>
                     <Route path='/delegativo' element={<Delegativo />}></Route>
                     {/*Unidad 3: Liderazgo Consciente, Transformacional y de Servicio*/}
@@ -79,16 +83,19 @@ export const App = () => {
                     <Route path='Coaching' element={<Coaching />}></Route>
                     <Route path='/test escucha activa' element={<TestEscuchaActiva />}></Route>
                     <Route path='/preguntas' element={<Preguntas />}></Route>
-                    <Route path='/test de inteligencia emocional' element={<NotFound />}></Route>
                     {/*Unidad 7: Teoría del Conflicto*/}
                     <Route path='/teoría del conflicto' element={<TeoriaConflicto />}></Route>
+                    <Route path='/el rumor que divide' element={<RumorDivide />}></Route>
+                    <Route path='/resolución de conflictos' element={<ResolucionConflictos />}></Route>
                     {/*Unidad 8: Negociación entre María y Tamara*/}
                     <Route path='/negociación' element={<Negociacion />}></Route>
                     <Route path='/maria y tamara' element={<MariayTamara />}></Route>
+                    <Route path='/historia de la naranja' element={<HistoriaNaranja />}></Route>
+                    <Route path='/humedales de berazategui' element={<HumedalesBerazategui />}></Route>
                     {/*Unidad 9: Programación Neurolenguística*/}
                     <Route path='/programación neurolengüística' element={<ProgramacionNeurolenguistica />}></Route>
                     {/*Unidad 10: Creatividad y Generación de opciones*/}
-                    <Route path='/creatividad' element={<NotFound />}></Route>
+                    <Route path='/creatividad' element={<Creatividad />}></Route>
                 </Routes>
             </main>
         </>

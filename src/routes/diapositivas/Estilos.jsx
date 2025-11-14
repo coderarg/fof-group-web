@@ -3,7 +3,7 @@ import './Slides.css'
 export const Estilos = () => {
     return (
         <div className="slide__container">
-            <h1>Estilos de Liderazgo</h1>
+            <img className="slide__img" src="./estilos-situacional-liderazgo.png" alt="" />
         </div>
     )
 }
