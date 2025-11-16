@@ -32,3 +32,9 @@ li,
 p {
     width: 80%;
 }
+
+.slide__container video {
+    z-index: 0;
+    width: 100%;
+    display: block;
+}
